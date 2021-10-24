@@ -1,0 +1,283 @@
+h1 {
+color: purple;
+font-size: 28px;
+font-family: Lobster;
+}
+
+h2 {
+color: black;
+font-size: 40px;
+font-family: Pangolin;
+}
+
+.sputnik {
+color: hotpink;
+font-size: 24px;
+font-family: Pangolin;
+ -webkit-text-stroke-width: 0.1px;
+   -webkit-text-stroke-color: black;
+}
+}
+
+input[type=submit] {
+ margin-left: 310px;
+ border-color: purple hotpink hotpink hotpink; 
+}
+
+p { 
+color: black;
+font-size: 18px;
+font-family: Pangolin;
+}
+
+ol { 
+color: black;
+font-size: 18px;
+font-family: Pangolin;
+}
+
+ul { 
+color: black;
+font-size: 18px;
+font-family: Pangolin;
+}
+
+a { 
+color: purple;
+font-size: 18px;
+font-family: Pangolin;
+font-weight: bold;
+}
+
+input {
+border-color: hotpink; 
+border-radius: 12px;
+}
+
+textarea {
+border-color: purple hotpink hotpink hotpink; 
+border-radius: 12px;
+border-width: 2px;
+color: black;
+font-size: 18px;
+font-family: Pangolin;
+}
+
+h1 {font-size: 30px;
+font-weight: 900;
+text-align: left;
+}
+
+body {
+  
+background-image: radial-gradient(lightgrey, lightpink);
+}
+
+.btn {
+background-image: radial-gradient(lightgrey, hotpink);
+    
+    color: blue; /* Белый цвет текста */
+    padding: 0.5rem 1rem; /* Поля вокруг текста */
+    text-decoration: none; /* Убираем подчёркивание */
+    border-radius: 10px; /* Скругляем уголки */
+   }
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: purple;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: lightpink;
+    color: white;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    background-image: radial-gradient(lightgrey, hotpink);
+   
+color: blue; /* Белый цвет текста */
+    padding: 0.5rem 1rem; /* Поля вокруг текста */
+    text-decoration: none; /* Убираем подчёркивание */
+    border-radius: 10px; /* Скругляем уголки */
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-image: radial-gradient(lightgrey, lightpink);
+    overflow: hidden;
+}
+
+
+.background1 {
+background-image: url('../images/comp.png');
+  background-position: left bottom, left top;
+  background-repeat: no-repeat, repeat;
+  padding: 15px;
+
+}
+   
+.background2 {
+background-image: url('../images/Copywriting+banner.jpg');
+  background-position: left bottom, left top;
+  background-repeat: no-repeat, repeat;
+  padding: 15px;
+
+}
+
+
+
+.top {
+margin: auto;
+  width: 35%;
+  padding: 15px;
+text-align: center;
+  
+  color: pink
+  letter-spacing: 170px;
+  font-weight: bold;
+  text-transform: uppercase;
+  animation: blur .80s ease-out infinite;
+  text-shadow: 0px 0px 5px pink, 0px 0px 7px pink;
+}
+
+@keyframes blur {
+  from {
+    text-shadow:0px 0px 10px pink,
+      0px 0px 10px pink, 
+      0px 0px 25px purple,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #7B96B8,
+      0px 0px 150px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px -10px 100px #7B96B8,
+      0px -10px 100px #7B96B8;
+  }
+}
+
+.footer1 {
+    background-image: radial-gradient(lightgrey, hotpink);
+   
+color: black; /* Белый цвет текста */
+   
+    text-decoration: none; /* Убираем подчёркивание */
+    border-radius: 10px; /* Скругляем уголки */
+margin-top:20px;
+}
+
+@-webkit-keyframes scroll {
+    0% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    100% {
+        -webkit-transform: translate(-100%, 0);
+        transform: translate(-100%, 0)
+    }
+}
+ 
+@-moz-keyframes scroll {
+    0% {
+        -moz-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    100% {
+        -moz-transform: translate(-100%, 0);
+        transform: translate(-100%, 0)
+    }
+}
+ 
+@keyframes scroll {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0)
+    }
+}
+ 
+.marquee {
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+ 
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    -webkit-animation: scroll 10s infinite linear;
+    -moz-animation: scroll 10s infinite linear;
+    animation: scroll 10s infinite linear;
+color: purple;
+font-size: 26px;
+}
+
+.fig {
+    text-align: center;
+   }
+.fig:hover {
+  -webkit-transform: rotateZ(20deg);
+  -ms-transform: rotateZ(20deg);
+  transform: rotateZ(20deg);
+}
+
+.werh {
+margin-top:30px;
+}
+
+.polja {
+margin-left: 15px;
+}
+
+.polja2 {
+margin-left: 15px;
+}
+
+.polja3 {
+margin-left: 15px;
+}
