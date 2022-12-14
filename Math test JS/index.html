@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Math test</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <style>
+      .btn {
+          background-color: deeppink;
+          border-radius: 50%;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+          padding: 1em;
+          font-size: 15pt;
+          margin: 0 auto;
+          display: block;
+      }
+
+      .text {
+          background-color: #f6f6f6;
+          border-radius: 10px 10px 10px 10px;
+          width: 100%;
+          margin-right: auto;
+          margin-left: auto;
+          text-align: center;
+      }
+
+      body {
+          background-image: radial-gradient(lightpink, blueviolet);
+      }
+
+      p {
+          color: darkblue;
+          font-size: 18px;
+          width: 100%;
+          margin-right: auto;
+          margin-left: auto;
+          text-align: center;
+      }
+
+      h1 {
+          color: darkblue;
+          font-size: 2.5rem;
+          display: flex;
+          justify-content: center;
+      }
+
+      .rounded-image {
+          width: 40%;
+          border-radius: 47%;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+      }
+  </style>
+</head>
+<body>
+<div class="container my-5">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+    <div class="col"><img class="rounded-image" src="owl.jpg" alt="owl"></div>
+    <div class="col">
+      <h1 class="fw-light">Math Test</h1>
+      <p>1. What does 2+2 equal?</p><input type="text" id="q1" class="text"><br>
+      <p>2. What does 2*3 equal?</p><input type="text" id="q2" class="text"><br>
+      <p>3. What does 20/2 equal?</p><input type="text" id="q3" class="text"><br>
+      <p>4. What does 2-3 equal?</p><input type="text" id="q4" class="text"><br>
+      <p>5. What does 5%2 equal?</p><input type="text" id="q5" class="text"><br>
+      <p>6. What does 11+9 equal?</p><input type="text" id="q6" class="text"><br><br><button class="btn" id="finish">Submit test</button>
+    </div>
+    <div class="col"><img class="rounded-image" src="owl.jpg" alt="owl"></div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
