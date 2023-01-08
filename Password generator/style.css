@@ -1,0 +1,42 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: blanchedalmond;
+    font-family: "Rowdies", cursive;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .password {
+    padding: 8px;
+    margin: 8px;
+    caret-color: transparent;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .password-button {
+    padding: 8px;
+    margin: 2px;
+    background-color: gold;
+    border-color: darkorange;
+    color: purple;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
