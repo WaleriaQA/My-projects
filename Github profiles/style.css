@@ -1,0 +1,70 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: aquamarine;
+    font-family: "Hind Siliguri", sans-serif;
+    border-style: double;
+    border-width: 10px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .search-image {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+  
+  .search-text {
+    padding: 4px;
+  }
+  
+  .search-input {
+    padding: 8px;
+    margin: 8px;
+    border-radius: 20px;
+  }
+  
+  .search-button {
+    padding: 8px;
+    background-color: blue;
+    color: beige;
+    cursor: grabbing;
+    border: none;
+    border-radius: 20px;
+  }
+  
+  .profile {
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: lightseagreen;
+    width: 300px;
+    box-shadow: 8px 8px 2px 1px rgb(160, 94, 160);
+  }
+  
+  .close-button {
+    padding: 8px;
+    background-color: blue;
+    border: none;
+    color: aliceblue;
+    border-radius: 20px;
+  }
+  
