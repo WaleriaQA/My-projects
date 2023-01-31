@@ -1,0 +1,134 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: blanchedalmond;
+  font-family: "Courier New", Courier, monospace;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.note-header {
+  width: 210px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.notes {
+  display: flex;
+  flex-direction: row;
+}
+
+.note {
+  background-color: fuchsia;
+  padding: 16px;
+  margin: 8px;
+  border-radius: 10px;
+  height: 300px;
+  width: 240px;
+  box-shadow: 2px 2px 5px 2px blueviolet;
+  position: relative; /*wspliwajuschij text edit stanowitsja widim. esli eto estj, to wspliwajuschij text Edit propadaet. esli ubratj- Edit propadaet.*/
+  display: flex;
+  flex-wrap: wrap; /*knopki edit i delete skriwajutsja swerhu*/
+  justify-content: flex-end; /*knopki edit i delete sjezzhajut wlewo*/
+}
+
+.note-add {
+  padding: 8px;
+  margin: 8px;
+  cursor: pointer;
+}
+
+.note-edit {
+  padding: 4px;
+  cursor: pointer;
+  height: 25px;
+  margin-right: 4px; /*daet rasstojanie mezhdu edit i delete*/
+}
+
+.note-delete {
+  padding: 4px;
+  cursor: pointer;
+  height: 25px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* делаем подсказку прозрачной и убираем её со страницы, чтобы она не появлялась при наведении на место, где она должна появиться */
+button.note-add:before {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* стили для всплывающего блока с текстом */
+button.note-add:before {
+  content: attr(data-tooltip);
+  width: 40px;
+  height: 22px;
+  line-height: 25px;
+  left: calc(25% - 40px);
+}
+
+button.note-add:hover:before,
+button.note-add:hover:after {
+  opacity: 10;
+  visibility: visible;
+  background-color: lightpink;
+  border: 1px solid black;
+}
+
+/* добавляем эффект движения */
+button.note-add:hover:before {
+  bottom: 570px;
+  right: 1200px;
+}
+
+button.note-add:hover:after {
+  bottom: 550px;
+  position: static;
+}
+
+/* стили для всплывающего блока с текстом */
+button.note-edit:before {
+  content: "Edit";
+  width: 22px;
+  height: 22px;
+  line-height: 25px;
+  top: -3px;
+  right: 48px;
+  position: absolute;
+  opacity: 0;
+}
+
+button.note-edit:hover:before {
+  opacity: 10;
+}
+
+.note-title,
+.note-text {
+  width: 200px;
+  word-break: break-all; /*text ne wihodit za predeli karti*/
+}
+
+.txt {
+  flex-grow: 1;
+  height: 70%;
+}
+.note-title-input,
+.note-textarea {
+  width: 100%; /*mozhno regulirowatj razmer input polej*/
+}
