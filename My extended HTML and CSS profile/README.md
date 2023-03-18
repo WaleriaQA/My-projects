@@ -1,0 +1,1 @@
+In this project you can find my extended profile. It describes my personal characteristics, professional experience and skills, education and courses. Also here you can find my hobbies and links to social networks.
