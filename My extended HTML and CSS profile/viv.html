@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+            @import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Martel&family=Open+Sans&family=Prosto+One&family=Roboto:wght@100&family=Rowdies:wght@300&family=Teko:wght@300&family=Unbounded:wght@200&family=Yeon+Sung&display=swap");
+
+      body {
+        background-color: lightslategray;
+        color: black;
+        font: normal 14px "Martel", serif;
+      }
+      .bg-violet {
+        background: linear-gradient(to top left, lime, transparent);
+        border-radius: 10px;
+      }
+      a:hover {
+        background: linear-gradient(to top left, rgb(188, 235, 18), transparent);
+        border-radius: 20px;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ViV Isomatic</title>
+  </head>
+  <body>
+    <a href=" https://viv-isomatic.com/" target="_blank">
+      https://viv-isomatic.com/</a
+    >
+    <br />
+    <br />
+    <div class="bg-violet">
+      V&V Isomatic is one of the leading companies in the sector, focused on
+      offering for sale materials for electrical and automation design, and
+      installation systems. The company decided that it is time to invest more
+      money in their digital presence and to swap their old presentational
+      website with a new, up to date e-commerce platform. The project was
+      extremely challenging based on some of the specificities of the business.
+      Some of the most problematic parts were:
+      <ul>
+        <li>
+          Big data - the website provides more than 200000 products with custom
+          images import. Since we have a pretty advanced search we used Apache
+          Solr to index all the data needed. The real problem here is that due
+          to price calculation each product has a different price for each
+          customer, that is why we have an on the fly presentation of the price
+          for each product.
+        </li>
+        <li>
+          Price calculations - there are several pricing rules that are coming
+          from the ERP system. Each customer must see the lowest price based on
+          current promotions by period, or by manufacturer, discount by product
+          categories or individual pricing lists.
+        </li>
+        <li>
+          ERP - each action taken from the site should be synced with the ERP.
+          All products, users, orders, reports, quantities, pricing rules and
+          etc.
+        </li>
+
+        <li>
+          Cable product - there is a special product type - cables. Each cable
+          can have standard and non-standard lengths. For non-standard lengths,
+          there is an additional pricing rule for cutting the cable. Also, the
+          cable price changes depending on the copper price for the specific
+          period.
+        </li>
+      </ul>
+
+      The website is currently supported and maintained by Bulcode. As an
+      additional task to our SLA agreement, we did a migration of the website
+      from Drupal 8 to Drupal 9.
+    </div>
+  </body>
+</html>
