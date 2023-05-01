@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Changing colour of the text</title>
+  <body class="color">
+    <style>
+      .color {
+        background-color: tan;
+      }
+
+      .black {
+        color: black;
+        text-align: center;
+        font-size: 40px;
+        padding: 40px;
+      }
+
+      .blue {
+        color: fuchsia;
+      }
+
+      .btn {
+        line-height: 38px;
+        font-size: 93%;
+        padding: 0 10px;
+        background: radial-gradient(123, 4, 567, 66);
+        border: 2px solid yellowgreen;
+        border-radius: 35px;
+        max-width: 100%;
+        height: auto;
+      }
+
+      .btn:hover {
+        background: #2bff00;
+      }
+
+      .image {
+        max-width: 100%;
+        height: auto;
+        padding: 35px;
+      }
+
+      .main {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+    </style>
+    <div class="main">
+      <p id="text" class="black">The colour of this text will be changed</p>
+      <div class="main">
+        <button class="btn" onclick="submit()">Click here to change the colour</button>
+      </div>
+      <img class="image" src="https://drive.google.com/uc?export=view&id=1fjDrE5N0Pn-hdObjd0-I_Qd47tv3-RY7" alt="jscat">
+      <script>
+        function submit() {
+          const search = document.getElementById("text").className
+          const buttonClass = document.getElementById("text")
+          if (search == "black") {
+            buttonClass.classList.add("blue")
+            console.log("The first step")
+          } else {
+            buttonClass.classList.remove("blue")
+            console.log("The second step")
+          }
+        }
+      </script>
+    </div>
+  </body>
+  </head>
+</html>
