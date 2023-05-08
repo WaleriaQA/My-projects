@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ОБИЧКАМ ТЕ!</title>
+    <style>
+        body {
+            background-color: chartreuse;
+        }
+          .hide-text {
+              font-size: 250px;
+              color: blue;
+              text-align: center;
+              
+          }
+    
+          .btn1 {
+              background-color: deeppink;
+              border-radius: 100%;
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+              padding: 1em;
+              font-size: 30pt;
+              margin: 0 auto;
+              display: block;
+          }
+
+          .btn1:hover {
+            background-color: blue;
+          }
+      </style>
+</head>
+<body>
+    <img id="pic" style="display:none;" src="https://drive.google.com/uc?export=view&id=1F77bPyuBYWtJs0l3E9zMqTNwFVTvT5tj" width="550" height="550">
+<button id="but" class="btn1" type="submit" onclick="myImg()">ОБИЧКАМ ТЕ!</button>
+
+<script>
+    function myImg() {
+        let elem = document.getElementById('pic'); // получаем элемент по ID
+  let style = getComputedStyle(elem); // получаем его стили
+  if (style.display === 'none') {
+    document.getElementById('pic').style.display='block';
+    } else if (style.display !== 'none') {
+    document.getElementById('pic').style.display='none';
+
+} }
+
+
+
+</script>
+    
+</body>
+</html>
