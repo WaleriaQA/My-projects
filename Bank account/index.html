@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bank account</title>
+  </head>
+  <body>
+    <span class="spb">
+      <h1 class="text-center">Bank account</h1>
+    </span>
+    <div class="container">
+      <button class="btn" onclick="deposit()">Deposit</button>
+      <button class="btn" onclick="withdraw()">Withdraw</button>
+      <button class="btn" onclick="verify()">Verify</button>
+    </div>
+    <script>
+      let money = 0;
+      const deposit = () => {
+        let newDeposit = prompt("How much money do you want to deposit to your bank account?")
+        money = money + Number(newDeposit)
+      }
+
+      function withdraw() {
+        let newWithdrawal = prompt("How much money do you want to withdraw from your bank account?")
+        if (newWithdrawal >= money) {
+          alert("There are not enought money on your bank account!")
+        } else {
+          money = money - Number(newWithdrawal)
+        }
+      }
+
+      function verify() {
+        alert("There are " + money + " RUB on your bank account.")
+      }
+    </script>
+  </body>
+</html>

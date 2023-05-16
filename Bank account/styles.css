@@ -1,0 +1,76 @@
+body {
+  background-color: rgb(144, 101, 197);
+  padding: 16px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  justify-content: center;
+  margin: 150px auto;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: large;
+}
+
+.btn:hover {
+  color: rgb(255, 0, 255);
+  font-weight: bold;
+}
+.text-center {
+  text-align: center;
+  font-size: 50px;
+  border: 4px double rgba(255, 255, 255, 0.25);
+  border-width: 4px 0;
+}
+.spb {
+  padding: 0.25em 0 0.325em;
+  display: block;
+  text-shadow: 50 50 80px rgba(255, 41, 141, 0.9);
+  animation: bounce-top 2s infinite both;
+
+  animation: bounce-top 2s infinite both;
+}
+@keyframes bounce-top {
+  0% {
+    transform: translateY(-45px);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 10;
+  }
+  40% {
+    transform: translateY(-24px);
+    animation-timing-function: ease-in;
+  }
+  65% {
+    transform: translateY(-12px);
+    animation-timing-function: ease-in;
+  }
+  82% {
+    transform: translateY(-6px);
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateY(-4px);
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
