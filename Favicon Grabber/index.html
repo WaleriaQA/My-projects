@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Favicon Grabber</title>
+    <link
+      rel="shortcut icon"
+      href="https://i.ibb.co/Wz1HB3q/icons8-grinning-cat-94.png"
+    />
+  </head>
+  <body>
+    <script type="text/javascript">
+      function validURL(string) {
+        const urlPattern =
+          /(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/g;
+        return urlPattern.test(string);
+      }
+
+      function startGrab() {
+        let url = document.getElementById("urltext").value.trim();
+
+        if (url === "") {
+          alert("Please Enter URL");
+        } else if (validURL(url)) {
+          grabFav();
+        } else {
+          alert("Please enter valid URL");
+        }
+      }
+
+      function grabFav() {
+        let url = document.getElementById("urltext").value.trim();
+        let myimage = document.getElementById("theimg");
+        let mysize = document.getElementById("size").value;
+        let duckapi = "https://icons.duckduckgo.com/ip3/";
+        let googleapi = "https://s2.googleusercontent.com/s2/favicons?domain=";
+
+        if (mysize === "default") {
+          const protocols = ["https://", "http://"];
+          protocols.forEach((protocol) => {
+            url = url.replace(protocol, "");
+          });
+
+          myimage.src = duckapi + url + ".ico";
+        } else if (["16", "32", "48", "64", "128"].includes(mysize)) {
+          myimage.src = googleapi + url + "&sz=" + mysize;
+        }
+      }
+    </script>
+
+    <div class="grid">
+      <h3 align="center">Favicon Grabber</h3>
+      <center><img src="" id="theimg" /></center>
+      <br />
+      <b
+        ><select id="size">
+          <option value="default">Default size</option>
+          <option value="16">16x16</option>
+          <option value="32">32x32</option>
+          <option value="48">48x48</option>
+          <option value="64">64x64</option>
+          <option value="128">128x128</option>
+        </select></b
+      ><br /><br />
+      <input type="text" placeholder="Enter URL" id="urltext" /><br /><br />
+      <input type="submit" value="Grab" onClick="startGrab()" />
+      <h4>
+        Developed by
+        <a
+          href="https://waleriaqa.github.io/My-projects/My%20extended%20HTML%20and%20CSS%20profile/"
+          target="_blank"
+          class="blink"
+          >Waleria Stojanowska</a
+        >
+        |
+        <a
+          href="https://www.linkedin.com/in/waleria-stojanowska/"
+          target="_blank"
+          >LinkedIn</a
+        >
+      </h4>
+    </div>
+  </body>
+</html>

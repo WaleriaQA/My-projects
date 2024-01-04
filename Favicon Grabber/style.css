@@ -1,0 +1,195 @@
+:root {
+  --baseColor: #d471dd;
+}
+
+.grid {
+  inline-size: 90%;
+  max-inline-size: 20rem;
+  margin-inline: auto;
+  display: grid;
+}
+
+/* .hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+} */
+
+/* .icon {
+  block-size: 1em;
+  display: inline-block;
+  fill: var(--iconFill);
+  inline-size: 1em;
+  vertical-align: middle;
+} */
+
+:root {
+  --htmlFontSize: 100%;
+
+  --bodyBackgroundColor: #2c3338;
+  --bodyColor: var(--baseColor);
+  --bodyFontFamily: "Open Sans";
+  --bodyFontFamilyFallback: sans-serif;
+  --bodyFontSize: 0.9rem;
+  --bodyFontWeight: 400;
+  --bodyLineHeight: 1.5;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: var(--htmlFontSize);
+}
+
+body {
+  background-color: #7c057c;
+  color: white;
+  font-family: var(--bodyFontFamily), var(--bodyFontFamilyFallback);
+  font-size: var(--bodyFontSize);
+  font-weight: var(--bodyFontWeight);
+  line-height: var(--bodyLineHeight);
+  margin: 0;
+  min-block-size: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+:root {
+  --anchorColor: #eee;
+}
+
+a {
+  color: var(--anchorColor);
+  outline: 0;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  text-decoration: underline;
+}
+
+a:hover.blink {
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+:root {
+  --formGap: 0.875rem;
+}
+
+input {
+  background-image: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  transition: background-color 0.3s;
+}
+
+input[type="text"] {
+  background-image: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  transition: background-color 0.3s;
+}
+
+select,
+option {
+  background-image: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"] {
+  cursor: grab;
+}
+
+input[type="text"],
+select,
+option,
+input[type="submit"] {
+  inline-size: 100%;
+}
+
+:root {
+  --loginBorderRadus: 2rem;
+  --loginColor: #eee;
+
+  --loginInputBackgroundColor: #887eb9;
+  --loginInputHoverBackgroundColor: #d471dd;
+
+  --loginLabelBackgroundColor: #e2eaf5;
+
+  --loginSubmitBackgroundColor: #ea4c88;
+  --loginSubmitColor: #eee;
+  --loginSubmitHoverBackgroundColor: #d44179;
+}
+
+input[type="text"],
+select,
+option,
+input[type="submit"] {
+  border-radius: var(--loginBorderRadus);
+  padding: 1rem;
+}
+
+input[type="text"],
+option,
+select {
+  background-color: var(--loginInputBackgroundColor);
+  border-bottom-left-radius: 2rem;
+  border-top-left-radius: 2rem;
+}
+
+input[type="text"]:focus,
+input[type="text"]:hover {
+  background-color: var(--loginInputHoverBackgroundColor);
+}
+
+input[type="submit"] {
+  background-color: #5ba516;
+  color: var(--loginSubmitColor);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+input[type="submit"]:focus,
+input[type="submit"]:hover {
+  background-color: #79d721;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+h3 {
+  font-size: 40px;
+}
