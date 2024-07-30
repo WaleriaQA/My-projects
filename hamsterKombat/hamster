@@ -1,0 +1,21 @@
+if (location.hostname === "hamsterkombatgame.io") {
+    const originalIndexOf = Array.prototype.indexOf;
+
+    Array.prototype.indexOf = function (...args) {
+        // Проверка на наличие платформ в массиве
+        const platforms = ["android", "android_x", "ios"];
+        if (this.length === platforms.length && this.every((val, index) => val === platforms[index])) {
+            setTimeout(() => {
+                // Восстановление оригинального метода indexOf
+                Array.prototype.indexOf = originalIndexOf;
+            }, 0); // Мгновенная задержка
+
+            return 0; // Возвращаем 0, чтобы позволить игре запускаться
+        }
+
+        // Логирование вызовов indexOf
+        console.log("Custom indexOf called: ", this);
+
+        return originalIndexOf.apply(this, args);
+    };
+}
